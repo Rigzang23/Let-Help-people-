@@ -1,1 +1,215 @@
-# Let-Help-people-
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>LHP • Let Help People</title>
+  <meta name="description" content="LHP (Let Help People) — a community memecoin where a portion of transaction fees helps people in need. No promises, no roadmap — just help.">
+  <meta property="og:title" content="LHP • Let Help People">
+  <meta property="og:description" content="LHP — a memecoin focused on using reward fees to support people in need.">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#0b1226">
+
+  <style>
+    :root{
+      --bg:#0b1226;
+      --accent:#ffd166;
+      --muted:#9fb1d1;
+      --glass: rgba(255,255,255,0.03);
+      --radius:12px;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      background: linear-gradient(180deg, #061025 0%, #07122a 60%);
+      color:#e6f0ff;
+      -webkit-font-smoothing:antialiased;
+      line-height:1.5;
+      padding:0;
+    }
+    .container{
+      max-width:1100px;
+      margin:0 auto;
+      padding:24px;
+    }
+
+    header{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      margin-bottom:28px;
+    }
+    h1{font-size:22px;margin:0}
+    .sub{color:var(--muted);font-size:13px}
+
+    /* HERO BANNER */
+    .hero-banner{
+      position:relative;
+      width:100%;
+      height:280px;
+      background:url('banner.png') center center/cover no-repeat;
+      border-radius:12px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      text-align:center;
+      color:#fff;
+      overflow:hidden;
+    }
+    .hero-overlay{
+      position:absolute;
+      top:0;left:0;
+      width:100%;height:100%;
+      background:linear-gradient(180deg,rgba(0,0,0,0.55),rgba(0,0,0,0.7));
+    }
+    .hero-content{
+      position:relative;
+      z-index:2;
+    }
+    .hero-content h2{
+      font-size:32px;
+      margin:0;
+      font-weight:800;
+    }
+    .hero-content p{
+      margin-top:10px;
+      font-size:15px;
+      color:#dbeafe;
+    }
+
+    .card{
+      background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+      border-radius:12px;
+      padding:18px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.45);
+      margin-top:20px;
+    }
+
+    .two{
+      display:grid;
+      grid-template-columns: 1fr 340px;
+      gap:20px;
+    }
+
+    .section-title{font-size:15px;margin:0 0 8px}
+    .big-desc{font-size:15px;color:#dbeafe;white-space:pre-line}
+    .how-list{list-style:none;padding:0;margin:0}
+    .how-list li{
+      margin-bottom:10px;
+      padding:10px;
+      background:rgba(255,255,255,0.01);
+      border-radius:10px;
+      border:1px solid rgba(255,255,255,0.02);
+    }
+    .muted{color:var(--muted);font-size:14px}
+
+    footer{
+      margin-top:26px;
+      display:flex;
+      justify-content:space-between;
+      gap:12px;
+      align-items:center;
+      color:var(--muted);
+      font-size:13px;
+      padding:24px;
+    }
+    .socials a{
+      color:var(--muted);
+      text-decoration:none;
+      margin-left:12px;
+    }
+    .socials a:hover{color:var(--accent)}
+
+    @media (max-width:880px){
+      .two{grid-template-columns:1fr}
+      .hero-content h2{font-size:26px}
+      footer{flex-direction:column;align-items:flex-start}
+    }
+  </style>
+</head>
+<body>
+  <div class="hero-banner">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h2>LHP — Let Help People</h2>
+      <p>A memecoin built to help people in need through reward fees</p>
+    </div>
+  </div>
+
+  <div class="container">
+    <header>
+      <div>
+        <h1>About LHP</h1>
+        <div class="sub">No buy buttons • No roadmap • No promises</div>
+      </div>
+    </header>
+
+    <main>
+      <section class="two">
+        <div class="card" aria-labelledby="about-title">
+          <h3 id="about-title" class="section-title">LHP (Let Help People) — Description</h3>
+
+          <div class="big-desc">
+LHP (Let Help People) is a community memecoin created to make small, practical contributions to people who need assistance — not through promises or investment talk, but through a simple mechanism: a portion of transaction reward fees is designated to be distributed to people and causes that need help.
+
+How it works:
+• Transactions involving LHP include a small reward fee. A part of those fees accumulates transparently on-chain.
+• Accumulated rewards are distributed to verified people, community projects, and assistance programs.
+• Community discussions help guide distribution toward genuine needs.
+• No promises — only real help when possible.
+
+Important: LHP is not investment advice and carries the normal risk of memecoins. The focus is on helping others through reward fees and community effort — nothing more.
+          </div>
+
+          <hr style="border:none;height:1px;background:rgba(255,255,255,0.02);margin:16px 0">
+
+          <h4 class="section-title">Values</h4>
+          <ul class="muted" style="margin:0;padding-left:18px">
+            <li>Transparency — public distributions when possible.</li>
+            <li>Community-first — open decision-making.</li>
+            <li>Practical help — small but real actions.</li>
+            <li>No promises — just effort to help.</li>
+          </ul>
+        </div>
+
+        <aside class="card" aria-labelledby="how-title">
+          <h3 id="how-title" class="section-title">How reward fees help</h3>
+          <ul class="how-list">
+            <li><strong>Fee collection:</strong> Small fee on each transaction.</li>
+            <li><strong>Verification:</strong> Community checks and confirms needs.</li>
+            <li><strong>Distribution:</strong> Funds go to individuals or causes.</li>
+            <li><strong>Reporting:</strong> Transparent community updates shared.</li>
+          </ul>
+
+          <div style="margin-top:12px">
+            <div class="section-title">No hype. No promises.</div>
+            <p class="muted" style="margin-top:8px">LHP is not a charity or investment vehicle. It’s a community effort to direct small token rewards into acts of help.</p>
+          </div>
+        </aside>
+      </section>
+
+      <section class="card" style="margin-top:10px">
+        <h3 class="section-title">Transparency</h3>
+        <p class="muted">All on-chain transactions related to LHP can be verified publicly on the blockchain explorer. The community encourages open audits and proposals for new helping mechanisms.</p>
+      </section>
+    </main>
+
+    <footer>
+      <div>
+        <div class="muted">© <span id="year"></span> LHP — Let Help People</div>
+        <div class="muted" style="margin-top:6px">Informational only. Not financial advice. Always do your own research.</div>
+      </div>
+
+      <div class="socials" aria-label="Social links">
+        <a href="https://x.com/YakCoinOfficial?t=yWMuKZgd443ECmD0yNZ1LQ&s=09" target="_blank">X (Twitter)</a>
+        <a href="https://t.me/Yak_Offical" target="_blank">Telegram</a>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html> 
